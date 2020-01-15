@@ -1,0 +1,28 @@
+<html>
+	<head>
+		<title>Федотов, 4 лаба</title>
+	</head>
+ <body>
+   Calculator<br>
+  <form method="POST" action=''>
+   <input TYPE="text" name="a" placeholder="0">
+   <input TYPE="radio" name="op" value='+'>+
+   <input TYPE="radio" name="op" value='-'>-
+   <input TYPE="radio" name="op" value='*'>*
+   <input TYPE="radio" name="op" value='/'>/
+   <input TYPE="text" name="b" placeholder="0">
+   <input type='submit' name='make_a_count' value='Count'> 
+  </form> 
+<?php
+  $a = $_POST['a'];
+  $b = $_POST['b'];
+  $radio=$_POST['op'];
+  if ($_POST['make_a_count'])
+  {
+      if ($radio=='+'){$c = $a + $b; echo "sum=" . $c.'<br>';}
+      if ($radio=='-'){$c = $a - $b; echo "sub=" . $d.'<br>';}
+      if ($radio=='*'){$c = $a * $b; echo "mul=" . $e.'<br>';}
+      if ($radio=='/'){$c = $a / $b; echo "div=" . $f.'<br>';}
+?>  
+ </body>
+</html>
